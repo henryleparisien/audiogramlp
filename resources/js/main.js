@@ -797,7 +797,7 @@ function startvisualizer(recording) {
 	
 	if (recording) {
 		//Hide Canvas if recording for small performance gain
-		document.getElementById("visualizer").style.display = "none";
+		//document.getElementById("visualizer").style.display = "none";
 		//Start the canvas capturestream
 		var canvasstream = false;
 		var videobitrate = false;
