@@ -58,11 +58,11 @@
 					<div class="inputspacer1">Position Top:</div>
 					<input onchange="onchangeoptions();" class="inputspacer2" type="number" id="foregroundpositiontop" value="0">
 				</div>
-				<div class="inputtype1" id="foregroundpositionleftwrapper">
-					<div class="inputspacer1">Position gauche:</div>
-					<input onchange="onchangeoptions();" class="inputspacer2" type="number" id="foregroundpositionleft" value="0">
+				<div class="inputtype1" id="foregroundpositionleftwrapper" style="display:none">
+					<div class="inputspacer1" style="display:none">Position gauche:</div>
+					<input onchange="onchangeoptions();" class="inputspacer2" type="number" id="foregroundpositionleft" value="0" style="display:none">
 				</div>
-				<div style="display:none">button class="inputtype2" id="clearforegroundimagebutton" onclick="clearforegroundimage();">Clear Foreground Image</button></div>
+				<div style="display:none"><button class="inputtype2" id="clearforegroundimagebutton" onclick="clearforegroundimage();">Clear Foreground Image</button></div>
 			<div class="heading">Son</div>
 				<input onchange="onchangeaudio(this);" class="inputtype2" type="file" id="inputaudio" accept="audio/*" />
 			<div class="heading" style="display:none">Visualisation :</div>
@@ -197,8 +197,8 @@
 					<div class="inputspacer1">Max Frequency:</div>
 					<input onchange="onchangeoptions();" class="inputspacer2" type="number" id="maxfrequency" value="160">
 				</div></div>
-				<div class="heading">Remplissage</div>
-					<select onchange="hideunusedoptions();" id="filltype" class="inputtype2">
+				<div class="heading"  style="display:none">Remplissage</div>
+					<select onchange="hideunusedoptions();" id="filltype" class="inputtype2"  style="display:none">
 						<option value="none">None</option>
 						<option value="solid" selected="selected">plein</option>
 						<option value="verticalgradient">Dégradé vertical</option>
