@@ -18,7 +18,7 @@ function initialize(){
 		option4.value = "video/webm; codecs=h264";
 		videofileformat.appendChild(option4); 
 	}
-	if (MediaRecorder.isTypeSupported("video/webm")) {
+	/*if (MediaRecorder.isTypeSupported("video/webm")) {
 		var option1 = document.createElement('option');
 		option1.appendChild( document.createTextNode("WebM") );
 		option1.value = "video/webm";
@@ -41,7 +41,7 @@ function initialize(){
 		option5.appendChild( document.createTextNode("WebM AVC1") );
 		option5.value = "video/webm; codecs=avc1";
 		videofileformat.appendChild(option5); 
-	}
+	}*/
 	/*if (MediaRecorder.isTypeSupported("video/x-matroska;codecs=avc1")) {
 		var option6 = document.createElement('option');
 		option6.appendChild( document.createTextNode("X-Matroska AVC1") );
