@@ -12,6 +12,12 @@ function initialize(){
 	if (!MediaRecorder) {
 		alert('Your web browser does not appear to support "MediaRecorder". You will be unable to record without it and this web page will most likely not load properly. Please try using Chrome/Chromium version 53 and higher or Firefox version 48 and higher.');	
 	}
+	if (MediaRecorder.isTypeSupported("video/webm;codecs=h264")) {
+		var option4 = document.createElement('option');
+		option4.appendChild( document.createTextNode("WebM H264") );
+		option4.value = "video/webm; codecs=h264";
+		videofileformat.appendChild(option4); 
+	}
 	if (MediaRecorder.isTypeSupported("video/webm")) {
 		var option1 = document.createElement('option');
 		option1.appendChild( document.createTextNode("WebM") );
@@ -29,12 +35,6 @@ function initialize(){
 		option3.appendChild( document.createTextNode("WebM VP8") );
 		option3.value = "video/webm; codecs=vp8";
 		videofileformat.appendChild(option3); 
-	}
-	if (MediaRecorder.isTypeSupported("video/webm;codecs=h264")) {
-		var option4 = document.createElement('option');
-		option4.appendChild( document.createTextNode("WebM H264") );
-		option4.value = "video/webm; codecs=h264";
-		videofileformat.appendChild(option4); 
 	}
 	if (MediaRecorder.isTypeSupported("video/webm;codecs=avc1")) {
 		var option5 = document.createElement('option');
